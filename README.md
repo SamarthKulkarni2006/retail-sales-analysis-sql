@@ -71,4 +71,4 @@ The dataset has been collected and uploaded to GitHub. SQL analysis, business in
 
 ## Author
 
-Data Analytics Portfolio Project
+Samarth Kulkarni
