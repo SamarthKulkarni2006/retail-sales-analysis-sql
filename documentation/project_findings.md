@@ -144,3 +144,23 @@ The discount analysis shows that profitability varies significantly across disco
 
 \*\*Business insight:\*\* The dataset suggests that higher discount ranges are associated with lower profitability. Businesses should review their discount strategy, especially discounts above 20%, to understand whether these discounts are helping sales enough to justify the reduced profit.
 
+
+
+\### Finding 6: Loss-Making Product Sub-Categories
+
+
+
+The analysis identified three product sub-categories with negative total profit.
+
+
+
+\- \*\*Tables\*\* recorded the highest loss of 17,725.48, with average discounts of 26.13%.
+
+\- \*\*Bookcases\*\* generated a loss of 3,472.56, with average discounts of 21.11%.
+
+\- \*\*Supplies\*\* recorded a loss of 1,189.10, with average discounts of 7.68%.
+
+
+
+\*\*Business insight:\*\* Tables are the largest loss-making sub-category and deserve further investigation. The business should review product pricing, discounts, and operating costs to understand the reasons behind these losses.
+

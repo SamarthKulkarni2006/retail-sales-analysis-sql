@@ -113,3 +113,23 @@ FROM sales
 
 GROUP BY Discount_Range
 ORDER BY MIN(Discount);
+
+
+-- ==========================================
+-- 7. Identify Loss-Making Sub-Categories
+-- ==========================================
+
+SELECT
+    `Sub-Category`,
+    COUNT(*) AS Total_Records,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    ROUND(AVG(Discount) * 100, 2) AS Average_Discount_Percent
+
+FROM sales
+
+GROUP BY `Sub-Category`
+
+HAVING SUM(Profit) < 0
+
+ORDER BY Total_Profit ASC;
