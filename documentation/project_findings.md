@@ -278,3 +278,27 @@ The shipping mode analysis compared four shipping methods based on sales, profit
 
 \*\*Business insight:\*\* Standard Class is the largest contributor to overall sales and profit, while First Class has the highest average profit per record. The business can investigate whether expanding First Class orders would improve profitability without compromising delivery performance.
 
+
+
+\### Finding 12: Product Quantity and Sales Analysis
+
+
+
+The analysis identified the top 10 product sub-categories based on total quantity sold.
+
+
+
+\- \*\*Binders\*\* ranked first in quantity sold, with 5,974 units, generating sales of 203,412.73 and profit of 30,221.76.
+
+\- \*\*Paper\*\* ranked second with 5,178 units sold but generated comparatively lower sales of 78,479.21.
+
+\- \*\*Phones\*\* generated the highest sales among the top 10 quantity-selling sub-categories, with 330,007.05 in sales from 3,289 units.
+
+\- \*\*Accessories\*\* generated 41,936.64 in profit from 2,976 units, outperforming Binders in total profit despite selling fewer units.
+
+\- \*\*Chairs\*\* generated sales of 328,449.10 from 2,356 units.
+
+
+
+\*\*Business insight:\*\* Higher sales volume does not necessarily translate into higher revenue or profit. The business should evaluate product pricing, profit margins and sales volume together rather than focusing only on the number of units sold.
+
