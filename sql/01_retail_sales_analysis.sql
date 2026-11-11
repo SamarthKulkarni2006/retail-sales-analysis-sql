@@ -215,5 +215,25 @@ HAVING SUM(Profit) < 0
 ORDER BY Total_Profit ASC;
 
 
+-- ==========================================
+-- 12. Regional Performance Comparison
+-- ==========================================
+
+SELECT
+    Region,
+    COUNT(*) AS Total_Records,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    ROUND(AVG(Discount) * 100, 2) AS Average_Discount_Percent,
+    ROUND(AVG(Profit), 2) AS Average_Profit
+
+FROM sales
+
+GROUP BY Region
+
+ORDER BY Total_Profit DESC;
+
+
+
 
 

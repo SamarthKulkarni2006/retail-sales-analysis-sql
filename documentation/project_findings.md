@@ -234,3 +234,25 @@ The analysis identified 10 states with negative total profit.
 
 \*\*Business insight:\*\* Texas, Ohio, Pennsylvania and Illinois require further investigation because they recorded the largest losses. Businesses should review pricing, discount policies and operating costs in these states. The discount figures indicate possible areas for investigation but do not establish the cause of the losses.
 
+
+
+\### Finding 10: Regional Performance Comparison
+
+
+
+The regional analysis compared sales, profit, average discounts and transaction records across four regions.
+
+
+
+\- \*\*West\*\* ranked first in both sales (725,457.82) and profit (108,418.45), with the lowest average discount of 10.93%.
+
+\- \*\*East\*\* ranked second in profit, generating 91,522.78.
+
+\- \*\*Central\*\* recorded the highest average discount of 24.04% and the lowest average profit of 17.09.
+
+\- \*\*South\*\* generated a total profit of 46,749.43 from 1,620 records.
+
+
+
+\*\*Business insight:\*\* West is the strongest-performing region in this dataset. Central requires further investigation because it has the highest average discount and lowest average profit. The relationship between discounts and profitability should be investigated further rather than assuming discounts alone caused the difference.
+
