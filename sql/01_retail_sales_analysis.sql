@@ -156,3 +156,43 @@ ORDER BY Total_Profit DESC
 
 LIMIT 10;
 
+
+-- ==========================================
+-- 9. Top 10 States by Sales
+-- ==========================================
+
+SELECT
+    State,
+    COUNT(*) AS Total_Records,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit
+
+FROM sales
+
+GROUP BY State
+
+ORDER BY Total_Sales DESC
+
+LIMIT 10;
+
+
+-- ==========================================
+-- 10. Top 10 States by Profit
+-- ==========================================
+
+SELECT
+    State,
+    COUNT(*) AS Total_Records,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit
+
+FROM sales
+
+GROUP BY State
+
+ORDER BY Total_Profit DESC
+
+LIMIT 10;
+
+
+

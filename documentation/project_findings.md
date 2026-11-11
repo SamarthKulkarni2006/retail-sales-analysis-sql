@@ -186,3 +186,27 @@ The analysis identified the top 10 profitable product sub-categories based on to
 
 \*\*Business insight:\*\* Copiers are the strongest-performing sub-category in terms of both total profit and average profit per record. The business could investigate opportunities to maintain and expand this profitable product segment.
 
+
+
+\### Finding 8: State-wise Sales and Profit Analysis
+
+
+
+The state-wise analysis revealed significant differences in sales and profitability across the top-performing states.
+
+
+
+\- \*\*California\*\* ranked first in both sales (457,687.63) and profit (76,381.39).
+
+\- \*\*New York\*\* ranked second in both sales (310,876.27) and profit (74,038.55).
+
+\- \*\*Washington\*\* ranked third in profit, generating 33,402.65.
+
+\- Michigan and Virginia generated profits of 24,463.19 and 18,597.95 respectively, despite having lower sales volumes.
+
+\- Texas ranked third in sales but recorded a loss of 25,729.36. Pennsylvania, Florida, Illinois and Ohio also recorded losses among the top 10 states by sales.
+
+
+
+\*\*Business insight:\*\* High sales do not necessarily translate into high profitability. Businesses should investigate loss-making states such as Texas, Pennsylvania and Ohio to understand their pricing, discount and cost patterns. California and New York represent particularly strong markets.
+
