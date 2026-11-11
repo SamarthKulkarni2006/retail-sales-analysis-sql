@@ -210,3 +210,27 @@ The state-wise analysis revealed significant differences in sales and profitabil
 
 \*\*Business insight:\*\* High sales do not necessarily translate into high profitability. Businesses should investigate loss-making states such as Texas, Pennsylvania and Ohio to understand their pricing, discount and cost patterns. California and New York represent particularly strong markets.
 
+
+
+\### Finding 9: Analysis of Loss-Making States
+
+
+
+The analysis identified 10 states with negative total profit.
+
+
+
+\- \*\*Texas\*\* recorded the highest loss of 25,729.36, despite generating sales of 170,188.05.
+
+\- \*\*Ohio\*\* recorded a loss of 16,971.38.
+
+\- \*\*Pennsylvania\*\* recorded a loss of 15,559.96.
+
+\- \*\*Illinois\*\* recorded a loss of 12,607.89 and had an average discount of 39%.
+
+\- Florida generated sales of 89,473.71 but still recorded a loss of 3,399.30.
+
+
+
+\*\*Business insight:\*\* Texas, Ohio, Pennsylvania and Illinois require further investigation because they recorded the largest losses. Businesses should review pricing, discount policies and operating costs in these states. The discount figures indicate possible areas for investigation but do not establish the cause of the losses.
+

@@ -195,4 +195,25 @@ ORDER BY Total_Profit DESC
 LIMIT 10;
 
 
+-- ==========================================
+-- 11. Most Loss-Making States
+-- ==========================================
+
+SELECT
+    State,
+    COUNT(*) AS Total_Records,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    ROUND(AVG(Discount) * 100, 2) AS Average_Discount_Percent
+
+FROM sales
+
+GROUP BY State
+
+HAVING SUM(Profit) < 0
+
+ORDER BY Total_Profit ASC;
+
+
+
 
