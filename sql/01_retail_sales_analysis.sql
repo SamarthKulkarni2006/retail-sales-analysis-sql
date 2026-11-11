@@ -234,6 +234,26 @@ GROUP BY Region
 ORDER BY Total_Profit DESC;
 
 
+-- ==========================================
+-- 13. Sales and Profit Analysis by Shipping Mode
+-- ==========================================
+
+SELECT
+    `Ship Mode`,
+    COUNT(*) AS Total_Records,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    ROUND(AVG(Profit), 2) AS Average_Profit,
+    ROUND(AVG(Discount) * 100, 2) AS Average_Discount_Percent
+
+FROM sales
+
+GROUP BY `Ship Mode`
+
+ORDER BY Total_Profit DESC;
+
+
+
 
 
 

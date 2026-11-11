@@ -256,3 +256,25 @@ The regional analysis compared sales, profit, average discounts and transaction 
 
 \*\*Business insight:\*\* West is the strongest-performing region in this dataset. Central requires further investigation because it has the highest average discount and lowest average profit. The relationship between discounts and profitability should be investigated further rather than assuming discounts alone caused the difference.
 
+
+
+\### Finding 11: Sales and Profit Analysis by Shipping Mode
+
+
+
+The shipping mode analysis compared four shipping methods based on sales, profit, transaction records and average discounts.
+
+
+
+\- \*\*Standard Class\*\* generated the highest sales of 1,358,215.74 and the highest total profit of 164,088.79.
+
+\- \*\*First Class\*\* recorded the highest average profit per record at 31.84.
+
+\- \*\*Second Class\*\* generated a total profit of 57,446.64.
+
+\- \*\*Same Day\*\* had the lowest transaction count (543), sales (128,363.12) and total profit (15,891.76).
+
+
+
+\*\*Business insight:\*\* Standard Class is the largest contributor to overall sales and profit, while First Class has the highest average profit per record. The business can investigate whether expanding First Class orders would improve profitability without compromising delivery performance.
+
