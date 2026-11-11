@@ -164,3 +164,25 @@ The analysis identified three product sub-categories with negative total profit.
 
 \*\*Business insight:\*\* Tables are the largest loss-making sub-category and deserve further investigation. The business should review product pricing, discounts, and operating costs to understand the reasons behind these losses.
 
+
+
+\### Finding 7: Top-Performing Product Sub-Categories
+
+
+
+The analysis identified the top 10 profitable product sub-categories based on total profit.
+
+
+
+\- \*\*Copiers\*\* ranked first, generating the highest total profit of 55,617.82 from just 68 records.
+
+\- \*\*Phones\*\* ranked second with a total profit of 44,515.73.
+
+\- \*\*Accessories\*\* ranked third with a total profit of 41,936.64.
+
+\- Paper and Binders also contributed significantly, generating profits of 34,053.57 and 30,221.76 respectively.
+
+
+
+\*\*Business insight:\*\* Copiers are the strongest-performing sub-category in terms of both total profit and average profit per record. The business could investigate opportunities to maintain and expand this profitable product segment.
+

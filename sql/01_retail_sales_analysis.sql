@@ -133,3 +133,26 @@ GROUP BY `Sub-Category`
 HAVING SUM(Profit) < 0
 
 ORDER BY Total_Profit ASC;
+
+
+-- ==========================================
+-- 8. Top-Performing Product Sub-Categories
+-- ==========================================
+
+SELECT
+    `Sub-Category`,
+    COUNT(*) AS Total_Records,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    ROUND(AVG(Profit), 2) AS Average_Profit
+
+FROM sales
+
+GROUP BY `Sub-Category`
+
+HAVING SUM(Profit) > 0
+
+ORDER BY Total_Profit DESC
+
+LIMIT 10;
+
