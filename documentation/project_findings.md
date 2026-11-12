@@ -1,5 +1,24 @@
 \# Retail Sales Analysis — Project Findings
 
+## Project Overview
+
+This project analyzes the Sample Superstore retail dataset using MySQL to identify sales patterns, profitability differences, discount behavior, and business improvement opportunities.
+
+The dataset contains **9,994 records and 13 columns**. The analysis covers product categories, customer segments, geographical regions, shipping methods, and product sub-categories.
+
+SQL techniques used include aggregation, filtering, grouping, subqueries, and window functions.
+
+## Executive Summary
+
+The retail sales analysis identified several important business insights:
+
+- **Technology** generated the highest sales and profit among the three product categories.
+- **West** was the strongest-performing region, generating sales of 725,457.82 and profit of 108,418.45.
+- **Copiers** was the most profitable product sub-category, generating 55,617.82 in total profit.
+- **Tables** was the largest loss-making product sub-category, recording a loss of 17,725.48.
+- **Texas** recorded the highest state-level loss of 25,729.36.
+- **Discounts above 30%** were associated with a combined loss of 125,006.78.
+- **Standard Class** generated the highest total sales and profit among shipping methods.
 
 
 \## Finding 1: Sales and Profit by Product Category
@@ -64,38 +83,21 @@ The regional analysis shows that the West region generated the highest sales and
 
 
 
-\## Finding 3: Profit Analysis by Sub-Category
+## Finding 3: Profit Analysis by Sub-Category
 
+### Observation
 
+The complete sub-category analysis shows that Copiers generated the highest total profit, followed by Phones, Accessories, Paper and Binders. Tables recorded the largest loss among all 17 product sub-categories.
 
-\### Observation
+### Key Insights
 
+- **Copiers** generated the highest total profit of 55,617.82.
+- **Phones** ranked second with a profit of 44,515.73.
+- **Accessories** ranked third with a profit of 41,936.64.
+- **Paper** and **Binders** generated profits of 34,053.57 and 30,221.76 respectively.
+- **Tables** recorded the lowest profit, with a loss of 17,725.48.
 
-
-The sub-category analysis reveals differences in profitability across product types. Among the five sub-categories visible in the SQL result, Copiers generated the highest profit, followed by Phones, Accessories, Paper, and Binders. This indicates that different product sub-categories contribute differently to the company's overall profitability.
-
-
-
-\### Key Insights
-
-
-
-\- Copiers generated the highest profit among the five displayed sub-categories.
-
-\- Phones and Accessories also contributed significantly to profit.
-
-\- Binders recorded the lowest profit among the five displayed sub-categories.
-
-\- Product-level profitability should be considered when making inventory and sales decisions.
-
-
-
-\*\*Note:\*\* This observation is based on the five sub-categories visible in the result grid. The complete result contains 17 sub-categories. The overall ranking should be verified using the complete SQL result.
-
-
-
-\---
-
+**Business insight:** Product sub-categories contribute differently to overall profitability. The business should focus on understanding the success of high-profit sub-categories and investigating loss-making products.
 
 
 \## Finding 4: Sales and Profit by Customer Segment
@@ -411,4 +413,36 @@ The SQL window function `ROW\_NUMBER()` was used to assign a unique sequential n
 
 
 \*\*SQL concepts used:\*\* `ROW\_NUMBER()`, `OVER()`, `ORDER BY` and subqueries.
+
+
+## Key Business Recommendations
+
+Based on the SQL analysis, the following business recommendations can be considered:
+
+1. **Review high-discount orders:** Investigate discounts above 20%, as these discount ranges were associated with negative total profit.
+
+2. **Improve loss-making products:** Review pricing, discounts and operating costs for Tables, Bookcases and Supplies.
+
+3. **Focus on profitable products:** Continue monitoring strong profit contributors such as Copiers, Phones and Accessories.
+
+4. **Investigate regional performance:** Study the Central region's high average discount and comparatively low average profit.
+
+5. **Review loss-making states:** Investigate Texas, Ohio, Pennsylvania and Illinois to identify possible reasons for negative profitability.
+
+6. **Evaluate shipping performance:** Analyze whether First Class shipping can be expanded while maintaining delivery efficiency and profitability.
+
+## Analysis Results
+
+Selected SQL query outputs are available in the `results/` folder:
+
+- `discount_impact.csv` – Profitability across discount ranges.
+- `regional_analysis.csv` – Sales and profit by region.
+- `state_profit_analysis.csv` – Top 10 states ranked by profit.
+- `subcategory_profit_ranking.csv` – Profit ranking of all 17 sub-categories.
+
+## Project Conclusion
+
+This project demonstrates how SQL can be used to analyze retail sales data and extract meaningful business insights. By applying aggregation, filtering, subqueries and window functions, the analysis identified profitable products, loss-making categories, regional differences and discount-related profitability patterns.
+
+The project strengthened practical SQL skills and demonstrated how data analysis can support informed business decisions.
 

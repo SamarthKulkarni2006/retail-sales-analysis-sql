@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This is a beginner-friendly Data Analytics portfolio project that explores retail sales data using SQL.
+This is a Data Analytics portfolio project that explores retail sales data using MySQL to identify sales patterns, profitability differences, discount behavior, and business improvement opportunities.
 
-The goal is to analyze sales performance, profitability, product categories, customer segments, and regional trends to discover useful business insights.
+The project uses the Sample Superstore dataset and applies SQL queries to extract meaningful business insights.
 
 ## Dataset
 
@@ -14,21 +14,24 @@ The goal is to analyze sales performance, profitability, product categories, cus
 - **Records:** 9,994
 - **Columns:** 13
 
-The dataset contains retail sales information such as shipping mode, customer segment, location, product category, sales, quantity, discount, and profit.
+The dataset contains information about shipping mode, customer segment, location, product category, sales, quantity, discount, and profit.
 
 ## Project Objectives
 
-This project aims to answer the following business questions:
+The project explores the following business questions:
 
-1. What is the total sales revenue?
-2. What is the total profit?
-3. Which product categories generate the highest sales?
-4. Which sub-categories generate the highest and lowest profit?
-5. Which regions perform best in sales and profitability?
-6. How do discounts affect profit?
-7. Which customer segments generate the most revenue?
-8. Which products or categories experience losses?
-9. What are the overall sales and profitability trends?
+1. What are the total sales and profit?
+2. Which product categories generate the highest sales and profit?
+3. Which sub-categories are the most and least profitable?
+4. Which regions perform best in sales and profitability?
+5. How are different discount ranges associated with profit?
+6. Which customer segments generate the most revenue?
+7. Which states generate the highest sales and profit?
+8. Which states and product sub-categories experience losses?
+9. How do shipping methods compare in sales and profitability?
+10. Which products have the highest sales volume?
+11. Which sub-categories generate above-average sales?
+12. How can window functions be used to rank product profitability?
 
 ## Tools and Technologies
 
@@ -37,37 +40,55 @@ This project aims to answer the following business questions:
 - MySQL Workbench
 - GitHub
 
-## SQL Concepts
-
-The project will demonstrate:
+## SQL Concepts Used
 
 - SELECT statements
 - WHERE conditions
 - ORDER BY
 - GROUP BY
-- Aggregate functions
-- JOINs
-- Subqueries
+- Aggregate functions: SUM(), AVG(), COUNT()
 - CASE statements
-- Date-based analysis
+- Subqueries
+- Window functions
+- RANK()
+- DENSE_RANK()
+- ROW_NUMBER()
+
+## Key Business Insights
+
+- Technology generated the highest sales and profit among the three product categories.
+- The West region recorded the highest sales and profit.
+- Copiers was the most profitable product sub-category, generating 55,617.82 in profit.
+- Tables recorded the largest sub-category loss of 17,725.48.
+- Texas recorded the highest state-level loss of 25,729.36.
+- Discounts above 30% were associated with a combined loss of 125,006.78.
+- Standard Class generated the highest total sales and profit among shipping methods.
 
 ## Project Structure
 
 ```text
 retail-sales-analysis-sql/
+│
 ├── data/
 │   └── SampleSuperstore.csv
+│
 ├── sql/
-├── results/
+│   └── 01_retail_sales_analysis.sql
+│
 ├── documentation/
+│   ├── data_dictionary.md
+│   └── project_findings.md
+│
+├── results/
+│
 └── README.md
 ```
 
 ## Project Status
 
-**Currently in progress.**
+**Completed**
 
-The dataset has been collected and uploaded to GitHub. SQL analysis, business insights, and final documentation will be added as the project develops.
+The project includes dataset preparation, SQL-based data analysis, data quality checks, business insights, and final documentation.
 
 ## Author
 
