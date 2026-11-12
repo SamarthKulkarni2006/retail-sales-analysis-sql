@@ -64,25 +64,37 @@ The project explores the following business questions:
 - Discounts above 30% were associated with a combined loss of 125,006.78.
 - Standard Class generated the highest total sales and profit among shipping methods.
 
+## Analysis Results
+
+Selected SQL query outputs are available in the `results/` folder:
+
+- `discount_impact.csv`
+- `regional_analysis.csv`
+- `state_profit_analysis.csv`
+- `subcategory_profit_ranking.csv`
+
 ## Project Structure
 
-```text
 retail-sales-analysis-sql/
 │
 ├── data/
 │   └── SampleSuperstore.csv
-│
-├── sql/
-│   └── 01_retail_sales_analysis.sql
 │
 ├── documentation/
 │   ├── data_dictionary.md
 │   └── project_findings.md
 │
 ├── results/
+│   ├── discount_impact.csv
+│   ├── regional_analysis.csv
+│   ├── state_profit_analysis.csv
+│   └── subcategory_profit_ranking.csv
+│
+├── sql/
+│   └── 01_retail_sales_analysis.sql
 │
 └── README.md
-```
+
 
 ## Project Status
 
