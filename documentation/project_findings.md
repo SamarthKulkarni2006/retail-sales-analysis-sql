@@ -358,3 +358,57 @@ A SQL window function, `RANK()`, was used to rank all 17 product sub-categories 
 
 \*\*SQL concepts used:\*\* `RANK()`, `OVER()`, `ORDER BY` and subqueries.
 
+
+
+
+
+\### Finding 15: Profit Ranking Using DENSE\_RANK()
+
+
+
+The SQL window function `DENSE\_RANK()` was used to rank all 17 product sub-categories based on total profit in descending order.
+
+
+
+\- \*\*Copiers\*\* ranked first with a total profit of 55,617.82.
+
+\- \*\*Phones\*\* ranked second with 44,515.73.
+
+\- \*\*Accessories\*\* ranked third with 41,936.64.
+
+\- \*\*Tables\*\* ranked last with a loss of 17,725.48.
+
+
+
+\*\*Technical insight:\*\* In this dataset, `DENSE\_RANK()` produced the same ranking as `RANK()` because no two sub-categories had identical total profit.
+
+
+
+\*\*SQL concept used:\*\* `DENSE\_RANK()`, `OVER()` and `ORDER BY`.
+
+
+
+\### Finding 16: Product Ranking Using ROW\_NUMBER()
+
+
+
+The SQL window function `ROW\_NUMBER()` was used to assign a unique sequential number to all 17 product sub-categories based on total profit in descending order.
+
+
+
+\- \*\*Copiers\*\* received row number 1 with a profit of 55,617.82.
+
+\- \*\*Phones\*\* received row number 2 with a profit of 44,515.73.
+
+\- \*\*Accessories\*\* received row number 3 with a profit of 41,936.64.
+
+\- \*\*Tables\*\* received row number 17 with a loss of 17,725.48.
+
+
+
+\*\*Technical insight:\*\* `ROW\_NUMBER()` assigns a unique sequential number to every row, making it useful for ranking, sorting and selecting top-performing records.
+
+
+
+\*\*SQL concepts used:\*\* `ROW\_NUMBER()`, `OVER()`, `ORDER BY` and subqueries.
+

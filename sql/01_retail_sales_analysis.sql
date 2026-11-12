@@ -326,6 +326,61 @@ FROM (
 ORDER BY Profit_Rank;
 
 
+-- ==========================================
+-- 17. Window Function: DENSE_RANK by Profit
+-- ==========================================
+
+SELECT
+    `Sub-Category`,
+    Total_Sales,
+    Total_Profit,
+
+    DENSE_RANK() OVER (
+        ORDER BY Total_Profit DESC
+    ) AS Dense_Profit_Rank
+
+FROM (
+    SELECT
+        `Sub-Category`,
+        ROUND(SUM(Sales), 2) AS Total_Sales,
+        ROUND(SUM(Profit), 2) AS Total_Profit
+
+    FROM sales
+
+    GROUP BY `Sub-Category`
+) AS Subcategory_Profit
+
+ORDER BY Dense_Profit_Rank;
+
+
+-- ==========================================
+-- 18. Window Function: ROW_NUMBER by Profit
+-- ==========================================
+
+SELECT
+    `Sub-Category`,
+    Total_Sales,
+    Total_Profit,
+
+    ROW_NUMBER() OVER (
+        ORDER BY Total_Profit DESC
+    ) AS Profit_Row_Number
+
+FROM (
+    SELECT
+        `Sub-Category`,
+        ROUND(SUM(Sales), 2) AS Total_Sales,
+        ROUND(SUM(Profit), 2) AS Total_Profit
+
+    FROM sales
+
+    GROUP BY `Sub-Category`
+) AS Subcategory_Profit
+
+ORDER BY Profit_Row_Number;
+
+
+
 
 
 
