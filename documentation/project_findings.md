@@ -302,3 +302,59 @@ The analysis identified the top 10 product sub-categories based on total quantit
 
 \*\*Business insight:\*\* Higher sales volume does not necessarily translate into higher revenue or profit. The business should evaluate product pricing, profit margins and sales volume together rather than focusing only on the number of units sold.
 
+
+
+\### Finding 13: Subquery Analysis – Above-Average Sales
+
+
+
+A subquery was used to identify product sub-categories whose total sales exceed the average total sales across all sub-categories.
+
+
+
+The analysis identified eight sub-categories:
+
+
+
+\- \*\*Phones\*\* recorded the highest sales of 330,007.05.
+
+\- \*\*Chairs\*\* ranked second with sales of 328,449.10.
+
+\- \*\*Copiers\*\* generated the highest profit of 55,617.82 among the identified sub-categories.
+
+\- \*\*Tables\*\* generated above-average sales of 206,965.53 but recorded a loss of 17,725.48.
+
+\- \*\*Machines\*\* generated sales of 189,238.63 but relatively low profit of 3,384.76.
+
+
+
+\*\*Business insight:\*\* Above-average sales do not guarantee strong profitability. Tables and Machines deserve further investigation, while Copiers demonstrate strong profitability despite lower sales than Phones and Chairs.
+
+
+
+\### Finding 14: Profit Ranking Using Window Functions
+
+
+
+A SQL window function, `RANK()`, was used to rank all 17 product sub-categories based on their total profit.
+
+
+
+\- \*\*Copiers\*\* ranked first with a total profit of 55,617.82.
+
+\- \*\*Phones\*\* ranked second with 44,515.73.
+
+\- \*\*Accessories\*\* ranked third with 41,936.64.
+
+\- \*\*Supplies, Bookcases and Tables\*\* occupied the bottom three positions, recording negative profits.
+
+\- \*\*Tables\*\* ranked last with a loss of 17,725.48.
+
+
+
+\*\*Business insight:\*\* Copiers, Phones and Accessories are the strongest profit contributors. Tables, Bookcases and Supplies require further investigation to improve profitability.
+
+
+
+\*\*SQL concepts used:\*\* `RANK()`, `OVER()`, `ORDER BY` and subqueries.
+

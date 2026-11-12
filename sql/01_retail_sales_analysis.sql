@@ -273,6 +273,60 @@ ORDER BY Total_Quantity_Sold DESC
 LIMIT 10;
 
 
+-- ==========================================
+-- 15. Subquery: Sub-Categories Above Average Sales
+-- ==========================================
+
+SELECT
+    `Sub-Category`,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit
+
+FROM sales
+
+GROUP BY `Sub-Category`
+
+HAVING SUM(Sales) > (
+    SELECT AVG(Subcategory_Sales)
+    FROM (
+        SELECT SUM(Sales) AS Subcategory_Sales
+        FROM sales
+        GROUP BY `Sub-Category`
+    ) AS Subcategory_Totals
+)
+
+ORDER BY Total_Sales DESC;
+
+
+
+-- ==========================================
+-- 16. Window Function: Rank Sub-Categories by Profit
+-- ==========================================
+
+SELECT
+    `Sub-Category`,
+    Total_Sales,
+    Total_Profit,
+
+    RANK() OVER (
+        ORDER BY Total_Profit DESC
+    ) AS Profit_Rank
+
+FROM (
+    SELECT
+        `Sub-Category`,
+        ROUND(SUM(Sales), 2) AS Total_Sales,
+        ROUND(SUM(Profit), 2) AS Total_Profit
+
+    FROM sales
+
+    GROUP BY `Sub-Category`
+) AS Subcategory_Profit
+
+ORDER BY Profit_Rank;
+
+
+
 
 
 
